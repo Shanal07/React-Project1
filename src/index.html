@@ -1,101 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00c4b1" />
+    <title>Developer</title>
+    <meta name="description" content="" />
+    <link
+      rel="shortcut icon"
+      href="https://hnh-covid.s3.amazonaws.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#00c4b1" />
-        <title>H&H Technology </title>
-        <meta name="description" content="H&H Technology WE ARE A TECHNOLOGY COMPANY THAT DESIGNS DIGITAL PRODUCTS & SERVICES THAT CREATE CLARITY & GROWTH">
-        <link rel="shortcut icon" href="https://hnh-covid.s3.amazonaws.com/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <style>
-            ::selection {
-                background-color: #00c4b1 !important;
-                color: #fff;
-            }
+  <body style="background: linear-gradient(110deg, #F9D976, #F39F86);">
+    <div id="app"></div>
 
-            .cursor {
-                position: fixed;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                left: 0;
-                top: 0;
-                pointer-events: none;
-                transform: translate(-50%, -50%);
-                transition: 0.1s;
-            }
-
-            .cursor2 {
-                position: fixed;
-                width: 18px;
-                height: 18px;
-                background-color: #00c4b1;
-                border-radius: 50%;
-                left: 0;
-                top: 0;
-                pointer-events: none;
-                transform: translate(-50%, -50%);
-                transition: 0.14s;
-            }
-
-            section:hover~.cursor {
-                transform: translate(-50%, -50%) scale(1.5);
-                background-color: gray;
-                opacity: 0.5;
-            }
-
-            section:hover~.cursor2 {
-                opacity: 0;
-            }
-
-            a:hover .cursor {
-                background-color: #00c4b1;
-
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <div id="app"></div>
-        <div data-tf-sidetab="sblQtEu6" data-tf-opacity="100" data-tf-iframe-props="title=H&H - 01- Lead Capture Form Template (copy)" data-tf-open="scroll" data-tf-open-value="30" data-tf-transitive-search-params data-tf-button-color="#07B19A" data-tf-button-text="Contact us now" style="all:unset;"></div>
-
-        <!-- <div className="cursor"></div> -->
-        <div class="cursor2"></div>
-        <script>
-            // var cursor = document.querySelector(".cursor");
-            var cursor2 = document.querySelector(".cursor2");
-            document.addEventListener("mousemove", function (e) {
-                // cursor.style.cssText = cursor2.style.cssText = "left :" + e.clientX + "px; top: " + e.clientY + "px;";
-                cursor2.style.cssText = cursor2.style.cssText = "left :" + e.clientX + "px; top: " + e.clientY +
-                    "px;";
-            });
-
-        </script>
-
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                offset: 300,
-                duration: 700
-            });
-
-        </script>
-
-
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT2QZEBGVE"></script>
-      <script src="//embed.typeform.com/next/embed.js"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', 'G-YT2QZEBGVE');
-      </script>
-    </body>
-
+    
+  </body>
 </html>

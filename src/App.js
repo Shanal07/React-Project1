@@ -3,6 +3,7 @@ import { Router as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import cookies from 'browser-cookies';
 
+
 //offline-plugin
 // require('offline-plugin/runtime').install();
 
@@ -10,7 +11,7 @@ import cookies from 'browser-cookies';
 import routes from './routes/index';
 
 // Actions 
-import { loadUser } from './actions/Auth'
+// import { loadUser } from './actions/Auth'
 
 // Helpers 
 import history from './helpers/history';
@@ -18,16 +19,7 @@ import history from './helpers/history';
 // Store 
 import store from './store'
 
-// Components 
-import Footer from './components/shared/Footer/Footer';
-
 function App() {
-
-    useEffect(() => {
-        if (cookies.get('token') !== null) {
-            store.dispatch(loadUser());
-        }
-    }, [])
 
     const routeComponents = routes.map(
         ({ path, component, protectedRoute }, key) => {
@@ -46,7 +38,6 @@ function App() {
                 <Switch>
                     { routeComponents }
                 </Switch>
-                <Footer />
             </Router>
         </Provider>
     )

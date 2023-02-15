@@ -1,6 +1,1 @@
 node_modules
-yarn.lock
-.env
-
-# During Production Remove build 
-build/

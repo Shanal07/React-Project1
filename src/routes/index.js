@@ -1,18 +1,17 @@
-import NotFound from "../components/Includes/NotFound";
-
-//Components
-import Realestate from '../components/pages/Realestate'
+import SignIn from "../components/pages/SignIn";
+import Register from "../components/Register/Signup";
 
 const routes = [
-    {
-        path: "/",
-        component: Realestate,
-        protectedRoute: false,
-    },
-    {
-        component: NotFound, // This should remain last
-    },
-]
-
+  {
+    path: "/",
+    component: SignIn,
+    protectedRoute: false,
+  },
+  {
+    path: "/SignUp",
+    component: Register,
+    protectedRoute: false,
+  },
+];
 
 export default routes;

@@ -1,0 +1,95 @@
+.login-m-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .login-f-cont {
+    width: 50vw;
+    margin-top: 85px;
+    margin-left: 50px;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgb(255, 237, 75);
+    background: linear-gradient(
+      207deg,
+      rgba(255, 237, 75, 1) 42%,
+      rgba(253, 205, 59, 1) 100%
+    );
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 85px;
+    font-family: "Raleway", sans-serif;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    .signin {
+      font-size: 22px;
+    }
+
+    input[type="text"] {
+      margin-top: 22px;
+      width: 300px;
+      height: 35px;
+      margin-bottom: 25px;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: transparent;
+      
+      
+    }
+    input[type="password"] {
+      width: 300px;
+      height: 35px;
+      margin-bottom: 14px;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: transparent;
+    }
+    .btn-forgot {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+      .forgot-password {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Poiret One", cursive;
+        font-weight: 600;
+      }
+
+      button[type="Submit"] {
+        color: black;
+        background:linear-gradient(#fdcd3b, #ffed4b);
+        width: 300px;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 15px;
+        height: 35px;
+        margin-bottom: 15px;
+      }
+      .register-click {
+        text-align: right;
+        font-size: 14px;
+        .signup-click
+        {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
