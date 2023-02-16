@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import lottie from "lottie-web";
 import AOS from 'aos';
 import "./index.scss";
+import history from "../../../helpers/history"
+import{v4 as uuidv4} from 'uuid';
+import cookies from 'browser-cookies';
+
 
 function Login() {
   useEffect(()=>
@@ -40,6 +44,15 @@ function Login() {
 
     console.log("username: ", username);
     console.log("password: ", password);
+
+    const token=uuidv4();
+    if (token){
+      console.log('token:',token);
+
+      cookies.set('token',token)
+      history.push("/Home")  
+    }
+    
   };
 
   const { username, password } = state;
